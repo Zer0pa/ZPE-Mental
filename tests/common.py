@@ -1,35 +1,10 @@
 from __future__ import annotations
 
-import os
 from pathlib import Path
 from typing import Iterable, Sequence, Tuple
 
-import numpy as np
-
 
 ROOT = Path(__file__).resolve().parents[1]
-FIXTURES = ROOT / "fixtures"
-NOTES = ROOT / "notes"
-
-
-def configure_env() -> None:
-    os.environ.setdefault("STROKEGRAM_ENABLE_DIAGRAM", "1")
-    os.environ.setdefault("STROKEGRAM_ENABLE_MUSIC", "1")
-    os.environ.setdefault("STROKEGRAM_ENABLE_VOICE", "1")
-
-
-def mean_point_distance(
-    points_a: Sequence[Tuple[float, float]],
-    points_b: Sequence[Tuple[float, float]],
-) -> float:
-    if not points_a and not points_b:
-        return 0.0
-    if not points_a or not points_b:
-        return float("inf")
-    a = np.array(points_a, dtype=np.float64)
-    b = np.array(points_b, dtype=np.float64)
-    dists = np.sqrt(((a[:, None, :] - b[None, :, :]) ** 2).sum(axis=2))
-    return float(np.mean(np.min(dists, axis=1)))
 
 
 def flatten_points(polylines: Iterable[Sequence[Tuple[float, float]]]) -> list[Tuple[float, float]]:
@@ -38,3 +13,21 @@ def flatten_points(polylines: Iterable[Sequence[Tuple[float, float]]]) -> list[T
         for pt in poly:
             out.append((float(pt[0]), float(pt[1])))
     return out
+
+
+def stroke_signature(stroke) -> tuple[int, int, int, int, int | None, int, tuple[tuple[str, int, int] | tuple[str, int], ...]]:
+    commands = []
+    for command in stroke.commands:
+        if hasattr(command, "x") and hasattr(command, "y") and not hasattr(command, "direction"):
+            commands.append(("m", int(command.x), int(command.y)))
+            continue
+        commands.append(("d", int(command.direction)))
+    return (
+        int(stroke.form_class),
+        int(stroke.symmetry),
+        int(stroke.direction_profile),
+        int(stroke.spatial_frequency),
+        stroke.frame_index,
+        int(stroke.delta_ms),
+        tuple(commands),
+    )

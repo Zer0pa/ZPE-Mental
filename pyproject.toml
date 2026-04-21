@@ -3,13 +3,13 @@ requires = ["maturin>=1.7,<2"]
 build-backend = "maturin"
 
 [project]
-name = "zpe-mental-codec"
+name = "zpe-mental"
 version = "0.1.0"
-description = "Optional Rust authoritative endogenous-form codec for Geogram 3 mental"
+description = "Bounded endogenous visual form encoding with a Rust-native fast path"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{name = "Zer0paGlyph"}]
-license = {text = "LicenseRef-Zer0pa-SAL-6.2"}
+dependencies = []
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.11",
@@ -17,6 +17,18 @@ classifiers = [
   "Programming Language :: Rust",
 ]
 
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.urls]
+Homepage = "https://github.com/Zer0pa/ZPE-Mental"
+Repository = "https://github.com/Zer0pa/ZPE-Mental"
+Issues = "https://github.com/Zer0pa/ZPE-Mental/issues"
+
 [tool.maturin]
 manifest-path = "Cargo.toml"
-module-name = "zpe_mental_codec"
+module-name = "zpe_mental._native"
+python-source = "."
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

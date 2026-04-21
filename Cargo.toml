@@ -1,17 +1,13 @@
 [package]
-name = "zpe_mental_codec"
+name = "zpe_mental_native"
 version = "0.1.0"
 edition = "2021"
 publish = false
-license = "LicenseRef-Zer0pa-SAL-6.2"
-description = "Geogram 3 Rust authoritative endogenous-form codec for mental"
+description = "Rust extension for bounded endogenous visual form encoding"
 
 [lib]
-name = "zpe_mental_codec"
+name = "zpe_mental_native"
 crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { version = "0.24", features = ["extension-module", "abi3-py311"] }
-
-[package.metadata.maturin]
-name = "zpe_mental_codec"

@@ -576,14 +576,15 @@ fn backend_info(py: Python<'_>) -> PyResult<Py<PyDict>> {
     info.set_item("backend", "rust")?;
     info.set_item("native", true)?;
     info.set_item("fallback_used", false)?;
-    info.set_item("module_name", "zpe_mental_codec")?;
+    info.set_item("module_name", "zpe_mental._native")?;
     info.set_item("crate_name", env!("CARGO_PKG_NAME"))?;
     info.set_item("version", env!("CARGO_PKG_VERSION"))?;
     Ok(info.unbind())
 }
 
 #[pymodule]
-fn zpe_mental_codec(m: &Bound<'_, PyModule>) -> PyResult<()> {
+#[pyo3(name = "_native")]
+fn zpe_mental_native(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(pack_mental_strokes_payload, m)?)?;
     m.add_function(wrap_pyfunction!(unpack_mental_words_payload, m)?)?;
     m.add_function(wrap_pyfunction!(backend_info, m)?)?;

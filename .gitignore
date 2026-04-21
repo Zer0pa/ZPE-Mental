@@ -1,6 +1,11 @@
 __pycache__/
 .pytest_cache/
+.venv/
+.venv-wheel/
 *.pyc
+*.so
+*.pyd
+*.dylib
 build/
 dist/
 target/

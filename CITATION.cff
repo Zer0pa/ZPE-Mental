@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: ZPE-Mental
+message: Please cite this repository using the metadata below.
+type: software
+authors:
+  - family-names: Zer0paGlyph
+repository-code: https://github.com/Zer0pa/ZPE-Mental
+url: https://github.com/Zer0pa/ZPE-Mental
+version: 0.1.0
+date-released: 2026-04-20
+abstract: >
+  Bounded endogenous visual form encoding with a Rust-native fast path and
+  in-repo Python reference parity checks.

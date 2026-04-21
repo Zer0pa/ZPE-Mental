@@ -9,3 +9,5 @@ __pycache__/
 build/
 dist/
 target/
+proofs/artifacts/*.local.json
+validation/results/*.local.xml

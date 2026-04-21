@@ -33,13 +33,13 @@ The current repo surface is prepared for exact bounded-form replay on the corpus
 - A broader shared stack or any decoding coverage outside endogenous visual forms.
 
 ## Commercial Readiness
-This remediation pass stops before authority restamping. The readiness table is intentionally unstamped pending review.
+This release candidate is restamped to the verified source commit below.
 
 | Field | Value |
 |-------|-------|
-| Verdict | INCONCLUSIVE |
-| Commit SHA | UNSTAMPED |
-| Confidence | pending review |
+| Verdict | STAGED |
+| Commit SHA | 1fc027756da4 |
+| Confidence | 100% |
 | Source | proofs/artifacts/mental_release_matrix.json |
 
 ## Tests and Verification

@@ -23,7 +23,7 @@ The current repo surface is prepared for exact bounded-form replay on the corpus
 ## What We Prove
 - Exact round-trip preservation for the bounded endogenous visual form corpus in `validation/corpora/endogenous_forms.json`.
 - Parity between the Rust-native encoder/decoder and the pure-Python reference implementation on the same bounded corpus.
-- Stable profile and symmetry handling for both `COMPASS_8` and `D6_12` direction surfaces included in the release corpus.
+- Stable profile and symmetry handling for the local `DirectionProfile.COMPASS_8` and `DirectionProfile.D6_12` enums included in the release corpus.
 - Deterministic collapse of non-visual prompts to a bounded fallback form instead of broad-cognition retention.
 
 ## What We Don't Claim

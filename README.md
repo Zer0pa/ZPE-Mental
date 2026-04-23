@@ -1,5 +1,7 @@
 # ZPE-Mental
 
+[![License: SAL v7.0](https://img.shields.io/badge/license-SAL%20v7.0-blue.svg)](LICENSE)
+
 ## What This Is
 ZPE-Mental is a bounded encoding product for endogenous visual forms: tunnels, spirals, lattices, cobweb-like geometry, and the profile and symmetry metadata needed to round-trip those forms exactly. It ships a public Python API backed by a Rust-native fast path, with a pure-Python reference path kept in-repo for parity checks.
 

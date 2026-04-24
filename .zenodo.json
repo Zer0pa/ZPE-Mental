@@ -1,0 +1,26 @@
+{
+  "title": "ZPE-Mental: bounded endogenous visual form encoding",
+  "description": "ZPE-Mental is a bounded encoding product for endogenous visual forms: tunnels, spirals, lattices, cobweb-like geometry, and the profile and symmetry metadata needed to round-trip those forms exactly. It ships a public Python API backed by a Rust-native fast path, with a pure-Python reference path kept in-repo for parity checks.",
+  "creators": [
+    {
+      "name": "Zer0pa (Pty) Ltd"
+    }
+  ],
+  "keywords": [
+    "mental encoding",
+    "visual forms",
+    "endogenous imagery",
+    "rust extension",
+    "reproducible research"
+  ],
+  "license": "LicenseRef-Zer0pa-SAL-7.0",
+  "upload_type": "software",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zer0pa/ZPE-Mental",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}

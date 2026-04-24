@@ -8,6 +8,12 @@ authors:
     email: architects@zer0pa.ai
 repository-code: https://github.com/Zer0pa/ZPE-Mental
 url: https://github.com/Zer0pa/ZPE-Mental
+keywords:
+  - mental encoding
+  - visual forms
+  - endogenous imagery
+  - rust extension
+  - reproducible research
 version: 0.1.0
 date-released: 2026-04-20
 abstract: >

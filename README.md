@@ -40,7 +40,7 @@ This release candidate is restamped to the verified source commit below.
 | Field | Value |
 |-------|-------|
 | Verdict | STAGED |
-| Commit SHA | 1fc027756da4 |
+| Commit SHA | 75bec6b1e8f2 |
 | Confidence | 100% |
 | Source | proofs/artifacts/mental_release_matrix.json |
 

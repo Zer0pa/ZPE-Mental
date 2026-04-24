@@ -8,13 +8,25 @@ version = "0.1.0"
 description = "Bounded endogenous visual form encoding with a Rust-native fast path"
 readme = "README.md"
 requires-python = ">=3.11"
+license = "LicenseRef-Zer0pa-SAL-7.0"
 authors = [{name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai"}]
 dependencies = []
+keywords = [
+  "mental encoding",
+  "visual forms",
+  "endogenous imagery",
+  "rust extension",
+  "reproducible research",
+]
 classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: Other/Proprietary License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Rust",
+  "Topic :: Scientific/Engineering",
 ]
 
 [project.optional-dependencies]
@@ -22,8 +34,10 @@ test = ["pytest>=8,<9"]
 
 [project.urls]
 Homepage = "https://github.com/Zer0pa/ZPE-Mental"
+Documentation = "https://github.com/Zer0pa/ZPE-Mental/blob/main/docs/README.md"
 Repository = "https://github.com/Zer0pa/ZPE-Mental"
 Issues = "https://github.com/Zer0pa/ZPE-Mental/issues"
+Changelog = "https://github.com/Zer0pa/ZPE-Mental/blob/main/CHANGELOG.md"
 
 [tool.maturin]
 manifest-path = "Cargo.toml"

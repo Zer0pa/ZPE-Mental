@@ -64,6 +64,10 @@ ZPE-Mental is useful now and improving continuously. The bounded scope is delibe
 | `validation/results/pytest.xml` | VERIFIED |
 | `docs/BOUNDED_RELEASE_SCOPE.md` | VERIFIED |
 
+## Comp Benchmarks
+
+ZPE-Mental encodes endogenous visual forms (tunnels, spirals, lattices, cobwebs per the Klüver form taxonomy). This modality has no incumbent codec market and no established external encoder/decoder. The closest domain — fractal geometry encoders or L-system compressors — generate fractals from rules rather than encode/decode closed perceptual forms; the comparison would be apples-to-oranges. The lane's product claim is exact roundtrip fidelity on the bounded form corpus (FORM_EXACT = 1.00), not byte compression.
+
 ## Repo Shape
 | Field | Value |
 |-------|-------|

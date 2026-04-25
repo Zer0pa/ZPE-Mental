@@ -13,20 +13,24 @@ The current repo surface is prepared for exact bounded-form replay on the corpus
 | Encoding | MENTAL_ENDOGENOUS_FORM_V1 |
 
 ## Key Metrics
-| Metric | Value | Baseline |
-|-------|-------|----------|
-| FORM_EXACT | 1.00 | ref |
-| BASELINE_DELTA | 0.00 | py-ref |
-| NON_VISUAL_ALIAS | 1.00 | bounded |
-| PYTEST_PASS | 3/3 | pytest |
+| Metric | Value | Baseline | Proof | CI Test |
+|-------|-------|----------|-------|---------|
+| FORM_EXACT | 1.00 | ref | `proofs/artifacts/mental_release_matrix.json` → `form_exact_rate` | `tests/test_mental_native_optional.py::test_mental_native_matches_python_reference_words_and_decode` |
+| BASELINE_DELTA | 0.00 | py-ref | `proofs/artifacts/mental_release_matrix.json` → `baseline_delta` | `tests/test_mental_reference.py::test_python_reference_round_trip_matches_public_api` |
+| NON_VISUAL_ALIAS | 1.00 | bounded | `proofs/artifacts/mental_release_matrix.json` → `non_visual_prompt_alias_rate` | `scripts/validate_release.py` (CI: Rebuild release artifact) |
+| NON_VISUAL_SEMANTIC_RETENTION | 0.00 | bounded | `proofs/artifacts/mental_release_matrix.json` → `non_visual_semantic_retention_rate` | `scripts/validate_release.py` (CI: Rebuild release artifact) |
+| PYTEST_PASS | 3/3 | pytest | `validation/results/pytest.xml` | `pytest tests -q` (CI: Run tests) |
 
-> Source: `proofs/artifacts/mental_release_matrix.json`; `validation/results/pytest.xml`
+`NON_VISUAL_SEMANTIC_RETENTION = 0.00` means non-visual prompts carry zero semantic content into the encoded output — they are deterministically collapsed to a bounded fallback form. `NON_VISUAL_ALIAS = 1.00` means every out-of-scope prompt maps to the same bounded canonical form.
+
+> Source: `proofs/artifacts/mental_release_matrix.json`; `validation/results/pytest.xml`; `proofs/manifests/CURRENT_FALSIFICATION_PACKET.md`
 
 ## What We Prove
-- Exact round-trip preservation for the bounded endogenous visual form corpus in `validation/corpora/endogenous_forms.json`.
-- Parity between the Rust-native encoder/decoder and the pure-Python reference implementation on the same bounded corpus.
-- Stable profile and symmetry handling for both `COMPASS_8` and `D6_12` direction surfaces included in the release corpus.
-- Deterministic collapse of non-visual prompts to a bounded fallback form instead of broad-cognition retention.
+- Exact round-trip preservation for the bounded endogenous visual form corpus in `validation/corpora/endogenous_forms.json` (4 forms: tunnel, spiral, lattice, cobweb).
+- Parity between the Rust-native encoder/decoder and the pure-Python reference implementation on the same bounded corpus (`BASELINE_DELTA = 0.00`; byte-level word equality asserted in CI).
+- Stable profile and symmetry handling for both `COMPASS_8` (8 directions at 45° increments) and `D6_12` (12 directions at 30° increments, enabling exact D6 rotational symmetry) direction surfaces included in the release corpus.
+- Deterministic collapse of non-visual prompts to a bounded fallback form instead of broad-cognition retention (`NON_VISUAL_SEMANTIC_RETENTION = 0.00`; `NON_VISUAL_ALIAS = 1.00`).
+- Compact 20-bit wire format supporting raw and RLE direction encodings, per-stroke frame-index and delta-time metadata, all within the same word space. RLE is the default transport (Augmentation Phase 2). Proof: `zpe_mental/pack.py`, `src/lib.rs`.
 
 ## What We Don't Claim
 - Broad cognition decoding or any general decoding of non-visual mental content.
@@ -39,9 +43,8 @@ This release candidate is restamped to the verified source commit below.
 
 | Field | Value |
 |-------|-------|
-| Verdict | STAGED |
+| Verdict | BETA-CANDIDATE |
 | Commit SHA | db4a57fefe28 |
-| Confidence | 100% |
 | Source | proofs/artifacts/mental_release_matrix.json |
 
 ## Tests and Verification

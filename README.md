@@ -43,7 +43,7 @@ This release candidate is restamped to the verified source commit below.
 
 | Field | Value |
 |-------|-------|
-| Verdict | BETA-CANDIDATE |
+| Verdict | STAGED |
 | Commit SHA | db4a57fefe28 |
 | Source | proofs/artifacts/mental_release_matrix.json |
 

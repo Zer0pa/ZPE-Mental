@@ -3,9 +3,11 @@
 [![License: SAL v7.0](https://img.shields.io/badge/license-SAL%20v7.0-blue.svg)](LICENSE)
 
 ## What This Is
-ZPE-Mental is a bounded encoding product for endogenous visual forms: tunnels, spirals, lattices, cobweb-like geometry, and the profile and symmetry metadata needed to round-trip those forms exactly. It ships a public Python API backed by a Rust-native fast path, with a pure-Python reference path kept in-repo for parity checks.
+ZPE-Mental is a bounded encoding product for endogenous visual forms: tunnels, spirals, lattices, cobweb-like geometry, and the profile and symmetry metadata needed to round-trip those forms exactly. It ships a public Python API backed by a Rust-native fast path, with a pure-Python reference path kept in-repo for parity checks. The strongest CI-anchored result is `FORM_EXACT = 1.00` — every form in the bounded release corpus survives a full encode/decode round-trip with zero loss, verified in CI against committed proof artifacts.
 
-The current repo surface is prepared for exact bounded-form replay on the corpus committed here and for fresh falsification from a clean outsider shell. It does not claim broad cognition decoding, language understanding, autobiographical memory recovery, or general decoding of non-visual mental content.
+ZPE-Mental is one of 17 independent encoding products in the Zer0pa portfolio, each scoped to its own domain; Mental covers the endogenous visual modality and makes no claim beyond it.
+
+The product is useful now and improving continuously. The current surface is prepared for exact bounded-form replay on the corpus committed here and for fresh falsification from a clean outsider shell. It does not claim broad cognition decoding, language understanding, autobiographical memory recovery, or general decoding of non-visual mental content.
 
 | Field | Value |
 |-------|-------|
@@ -39,7 +41,7 @@ The current repo surface is prepared for exact bounded-form replay on the corpus
 - A broader shared stack or any decoding coverage outside endogenous visual forms.
 
 ## Commercial Readiness
-This release candidate is restamped to the verified source commit below.
+ZPE-Mental is useful now and improving continuously. The bounded scope is deliberate: the product ships what it can prove, and proof coverage will expand as the corpus and techniques mature. `STAGED` reflects that this surface is public and adopter-ready within its bounded scope — not that it is incomplete or hedged.
 
 | Field | Value |
 |-------|-------|

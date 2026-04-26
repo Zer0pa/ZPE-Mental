@@ -91,3 +91,9 @@ python -m pip install ".[test]"
 python scripts/validate_release.py --output proofs/artifacts/mental_release_matrix.json
 pytest tests -q --junitxml validation/results/pytest.xml
 ```
+
+## Upcoming Workstreams
+
+This section captures the active lane priorities — what the next agent or contributor picks up, and what investors should expect. Cadence is continuous, not milestoned.
+
+- **Klüver-form codec — market and admission path** — Zero-Base Scientific Thinking — GPD Research and Planning Pending. Lane has no incumbent codec market for endogenous visual forms. Active research into market definition (perceptual encoding, neuroscience tooling, altered-states documentation, art-tech) and the certified-subset admission path before corpus expansion past the four bounded forms.

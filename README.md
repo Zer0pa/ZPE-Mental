@@ -1,6 +1,6 @@
 # ZPE-Mental
 
-[![License: SAL v7.1](https://img.shields.io/badge/license-SAL%20v7.0-blue.svg)](LICENSE)
+[![License: SAL v7.1](https://img.shields.io/badge/license-SAL%20v7.1-blue.svg)](LICENSE)
 
 ## What This Is
 
@@ -43,8 +43,8 @@ The product is useful now and improving continuously. The current surface is pre
 | Visibility | PUBLIC |
 | Architecture | VISUAL_FORM_STREAM |
 | Encoding | MENTAL_ENDOGENOUS_FORM_V1 |
-| Commit SHA | 1fc027756da4 |
-| License | SAL-7.0 |
+| Commit SHA | 7d4668156676 |
+| License | SAL-7.1 |
 | Authority Source | proofs/artifacts/mental_release_matrix.json |
 
 ## Readiness

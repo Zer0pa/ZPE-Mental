@@ -1,6 +1,6 @@
 # ZPE-Mental
 
-[![License: SAL v7.0](https://img.shields.io/badge/license-SAL%20v7.0-blue.svg)](LICENSE)
+[![License: SAL v7.1](https://img.shields.io/badge/license-SAL%20v7.0-blue.svg)](LICENSE)
 
 ## What This Is
 

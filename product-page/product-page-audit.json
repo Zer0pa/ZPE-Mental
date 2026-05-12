@@ -1,0 +1,31 @@
+{
+  "pretext": "active",
+  "console_errors": [],
+  "live_targets": [
+    {
+      "tag": "SPAN",
+      "text": "LIVE LANE \u00b7 032114Z",
+      "parentClass": "b-id"
+    }
+  ],
+  "external_placeholders": [
+    {
+      "tag": "ARTICLE",
+      "id_label": ""
+    },
+    {
+      "tag": "ARTICLE",
+      "id_label": "01 \u00b7 THE GAP"
+    },
+    {
+      "tag": "ARTICLE",
+      "id_label": "02 \u00b7 MARKETS"
+    },
+    {
+      "tag": "ARTICLE",
+      "id_label": "03 \u00b7 VALUE"
+    }
+  ],
+  "stale_term_check": [],
+  "pretext_tight_count": 0
+}

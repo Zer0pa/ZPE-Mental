@@ -5,15 +5,17 @@
 <!-- INSTALL-DX:START -->
 #### Package Install
 
-Installable package: `python3.11 -m pip install zpe-mental`.
-Current release: `0.1.0` on [PyPI](https://pypi.org/project/zpe-mental/).
+PyPI package: `zpe-mental==0.1.0` on [PyPI](https://pypi.org/project/zpe-mental/).
+Current published artifacts are Python 3.11 Linux x86_64 manylinux wheels only; macOS/Windows installs and source-build installs require future sdists or additional platform wheels. Package availability does not imply product or clinical readiness.
 Source: [Zer0pa/ZPE-Mental](https://github.com/Zer0pa/ZPE-Mental/).
+
+Supported PyPI artifact install, on Python 3.11 Linux x86_64:
 
 ```bash
 python3.11 -m pip install zpe-mental
 ```
 
-Import smoke:
+Import smoke after a supported-platform install:
 
 ```bash
 python3.11 - <<'PY'
@@ -25,7 +27,7 @@ PY
 ```
 
 Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
-- Current PyPI surface is Linux cp311 wheel-only with no sdist; use Python 3.11 for smoke checks.
+- Current PyPI surface is Linux x86_64 Python 3.11 wheel-only with no sdist; use Python 3.11 Linux x86_64 for PyPI smoke checks.
 <!-- INSTALL-DX:END -->
 
 #### Quick Start
@@ -49,7 +51,7 @@ pytest tests -q --junitxml validation/results/pytest.xml
 <td width="100%" valign="top">
 <div><span><b>00 · ZPE-MENTAL</b> · VISUAL FORM CODEC</span> <span>LIVE LANE · 032114Z</span></div>
       <h1>Tracing mental images <span>for a codec.</span></h1>
-      <p>Four-form endogenous-visual codec &middot; ZPE-Mental &middot; PyPI <em>zpe-mental</em> v0.1.0 &middot; github.com/Zer0pa/ZPE-Mental</p>
+      <p>Four-form endogenous-visual codec &middot; ZPE-Mental &middot; PyPI <em>zpe-mental</em> v0.1.0, Linux x86_64 wheel only &middot; github.com/Zer0pa/ZPE-Mental</p>
       <p>Perceptual science has described tunnel, spiral, lattice, and cobweb for nearly a century &mdash; the four Klüver form constants people see in the mind's eye &mdash; but no one had ever pinned them to an exact, replayable shape. ZPE-Mental writes each form into a <strong>20-bit packet</strong> and brings it back byte-identical across a Rust-native fast path and a Python reference. Non-visual prompts collapse to a bounded fallback. <em>No cognition, clinical, diagnostic, or autobiographical claim is made</em> &mdash; just the four forms, replayed exactly.</p>
 </td>
 </tr>
@@ -239,7 +241,7 @@ pytest tests -q --junitxml validation/results/pytest.xml
 <td width="34%" valign="top">
 <div><b>08.2 · THE FIDELITY GAP</b></div>
       <span>Honest Blocker ·</span>
-      <p>No cognition decoding, autobiographical recovery, language understanding, theorem proving, legal or moral reasoning, clinical diagnosis, therapy, medical-device, regulatory, mental-health-assessment, or prosthetics use. <strong>The release corpus is exactly four endogenous visual-form examples &mdash; tunnel, spiral, lattice, cobweb.</strong> No all-forms/all-profiles coverage; PyPI remains 0.1.0 stale pending 0.1.1 metadata release.</p>
+      <p>No cognition decoding, autobiographical recovery, language understanding, theorem proving, legal or moral reasoning, clinical diagnosis, therapy, medical-device, regulatory, mental-health-assessment, or prosthetics use. <strong>The release corpus is exactly four endogenous visual-form examples &mdash; tunnel, spiral, lattice, cobweb.</strong> No all-forms/all-profiles coverage; PyPI remains 0.1.0 stale and Linux x86_64 wheel-only pending broader artifact coverage.</p>
 </td>
 </tr>
 </table>
@@ -265,7 +267,7 @@ pytest tests -q --junitxml validation/results/pytest.xml
 </td>
 <td width="67%" valign="top">
 <div><b>09.3 · WHAT'S STILL OPEN</b> <span>EXTERNAL</span></div>
-        <h2>Still open: broader form coverage, full profile range, and the 0.1.1 metadata release that retires the stale PyPI 0.1.0.</h2>
+        <h2>Still open: broader form coverage, full profile range, and release work that retires the stale, Linux x86_64-only PyPI 0.1.0.</h2>
 </td>
 </tr>
 </table>

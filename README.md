@@ -1,6 +1,6 @@
 # ZPE-Mental
 
-## 0. Install / Developer Commands
+## Install / Developer Commands
 
 #### Quick Start
 
@@ -18,17 +18,17 @@ python scripts/validate_release.py --output proofs/artifacts/mental_release_matr
 pytest tests -q --junitxml validation/results/pytest.xml
 ```
 
-<table>
+<table width="100%">
 <tr>
-<td colspan="7" valign="top">
-<sub>01 · Bento cell · b-cell b-hero cell-7 row-2</sub>
-<div><span><b>00 · ZPE-MENTAL</b> · VISUAL FORM CODEC</span><span>LIVE LANE · 032114Z</span></div>
+<td colspan="12" width="100.0%" valign="top">
+<div><span><b>00 · ZPE-MENTAL</b> · VISUAL FORM CODEC</span> <span>LIVE LANE · 032114Z</span></div>
       <h1>Tracing mental images <span>for a codec.</span></h1>
       <p>Four-form endogenous-visual codec &middot; ZPE-Mental &middot; PyPI <em>zpe-mental</em> v0.1.0 &middot; github.com/Zer0pa/ZPE-Mental</p>
       <p>Perceptual science has described tunnel, spiral, lattice, and cobweb for nearly a century &mdash; the four Klüver form constants people see in the mind's eye &mdash; but no one had ever pinned them to an exact, replayable shape. ZPE-Mental writes each form into a <strong>20-bit packet</strong> and brings it back byte-identical across a Rust-native fast path and a Python reference. Non-visual prompts collapse to a bounded fallback. <em>No cognition, clinical, diagnostic, or autobiographical claim is made</em> &mdash; just the four forms, replayed exactly.</p>
 </td>
-<td colspan="5" valign="top">
-<sub>02 · ZPE Mental animated mechanics diagram · b-cell b-codec-mechanics cell-5 row-2</sub>
+</tr>
+<tr>
+<td colspan="12" width="100.0%" align="center" valign="top">
 <figure>
         <div><img src="docs/assets/product-page-mechanics.gif" alt="ZPE-Mental approved scientific square mechanics diagram showing endogenous visual-form codec mechanics."></div>
         <figcaption><b>Scope:</b> four Kluever visual-form constants. No cognition, clinical, diagnostic, memory, or autobiographical claim.</figcaption>
@@ -36,57 +36,48 @@ pytest tests -q --junitxml validation/results/pytest.xml
 </td>
 </tr>
 <tr>
-<td colspan="4" valign="top">
-<sub>03 · Bento cell · b-cell b-title cell-4</sub>
-<div><b>01 · THE GAP</b><span>DESCRIBED, NOT CAPTURED</span></div>
+<td colspan="4" width="33.33%" valign="top">
+<div><b>01 · THE GAP</b> <span>DESCRIBED, NOT CAPTURED</span></div>
       <h2>These forms have been described in words for a century. None captured exactly.</h2>
 </td>
-<td colspan="5" valign="top">
-<sub>04 · Bento cell · b-cell b-fig cell-5</sub>
-<div><b>02 · MARKETS</b><span>ADJACENT FORECASTS</span></div>
+<td colspan="8" width="66.67%" valign="top">
+<div><b>02 · MARKETS</b> <span>ADJACENT FORECASTS</span></div>
       <div>
         <div>
-          <div><span>NIH BRAIN Initiative FY24</span><span></span><span>$0.75B/yr</span></div>
-          <div><span>Perceptual/cognitive neuroscience software &rsquo;30</span><span></span><span>est. $0.8B</span></div>
-          <div><span>Open-science replication infrastructure &rsquo;28</span><span></span><span>est. $0.3B</span></div>
-          <div><span>Psychedelic research clinical trials &rsquo;30</span><span></span><span>est. $0.5B</span></div>
-          <div><span>Computational neuroscience tooling &rsquo;30</span><span></span><span>est. $1.1B</span></div>
+          <div><span>NIH BRAIN Initiative FY24</span>  <span>$0.75B/yr</span></div>
+          <div><span>Perceptual/cognitive neuroscience software &rsquo;30</span>  <span>est. $0.8B</span></div>
+          <div><span>Open-science replication infrastructure &rsquo;28</span>  <span>est. $0.3B</span></div>
+          <div><span>Psychedelic research clinical trials &rsquo;30</span>  <span>est. $0.5B</span></div>
+          <div><span>Computational neuroscience tooling &rsquo;30</span>  <span>est. $1.1B</span></div>
         </div>
       </div>
       <div>Adjacent research-infrastructure estimates only; ZPE-Mental is a small replay tool for four named visual forms, not a market claim.</div>
 </td>
-<td colspan="3" valign="top">
-<sub>05 · Bento cell · b-cell b-stat cell-3</sub>
-<div><b>03 · VALUE</b></div>
-      <div><span>$0.75</span><span>B/yr</span></div>
-      <div>NIH BRAIN Initiative annual funding; ZPE-Mental serves perceptual research as a <b>four-form fixture tool</b>.</div>
-</td>
 </tr>
 <tr>
-<td colspan="3" valign="top">
-<sub>06 · Bento cell · b-cell b-title is-centered cell-3</sub>
+<td colspan="6" width="50.0%" valign="top">
+<div><b>03 · VALUE</b></div>
+      <div><span>$0.75</span> <span>B/yr</span></div>
+      <div>NIH BRAIN Initiative annual funding; ZPE-Mental serves perceptual research as a <b>four-form fixture tool</b>.</div>
+</td>
+<td colspan="6" width="50.0%" valign="top">
 <div><b>04 · INSIGHT</b></div>
       <h2>Fix the form. Tunnel, spiral, lattice, cobweb &mdash; <span>the same shape every time.</span></h2>
 </td>
 </tr>
 <tr>
-<td colspan="12" valign="top">
-<sub>07 · Bento cell · b-cell b-prose is-technical b-tech-panel</sub>
-<div><b>05.1 · CURRENT TECH</b><span>DESCRIBED, NOT PINNED</span></div>
+<td colspan="6" width="50.0%" valign="top">
+<div><b>05.1 · CURRENT TECH</b> <span>DESCRIBED, NOT PINNED</span></div>
         <p>Klüver named these four forms in 1928, and perceptual science has studied them ever since. Yet every reference depends on prose, sketches, or rendered images that drift between researchers, devices, and decades. The form itself was never standardised.</p>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>08 · Bento cell · b-cell b-prose is-technical b-tech-panel</sub>
-<div><b>05.2 · OUR TECH</b><span>PIN THE FORM</span></div>
+<td colspan="6" width="50.0%" valign="top">
+<div><b>05.2 · OUR TECH</b> <span>PIN THE FORM</span></div>
         <p>ZPE-Mental writes each of the four forms into a <strong>20-bit packet</strong> with profile and symmetry metadata, then returns the exact same bytes whether it runs in Rust or in Python. Non-visual prompts collapse to a documented fallback rather than producing a plausible-looking form. Two profiles &mdash; <strong>COMPASS_8</strong> and <strong>D6_12</strong> &mdash; are represented; coverage stays narrow on purpose.</p>
 </td>
 </tr>
 <tr>
-<td colspan="3" valign="top">
-<sub>09 · Bento cell · b-cell b-fig b-benchmark-mini cell-3</sub>
-<div><b>05.3 · BENCHMARKS</b><span>FOUR-FORM CORPUS</span></div>
+<td colspan="12" width="100.0%" valign="top">
+<div><b>05.3 · BENCHMARKS</b> <span>FOUR-FORM CORPUS</span></div>
       <div>
         <div>
           <div><span>FORM_EXACT</span><b>1.00</b><small>fidelity</small></div>
@@ -95,155 +86,119 @@ pytest tests -q --junitxml validation/results/pytest.xml
           <div><span>PyPI</span><b>0.1.0</b><small>stale</small></div>
         </div>
         <div>
-          <div><span>tunnel</span><span></span><span>1.00</span></div>
-          <div><span>spiral</span><span></span><span>1.00</span></div>
-          <div><span>lattice</span><span></span><span>1.00</span></div>
+          <div><span>tunnel</span>  <span>1.00</span></div>
+          <div><span>spiral</span>  <span>1.00</span></div>
+          <div><span>lattice</span>  <span>1.00</span></div>
         </div>
       </div>
       <div><b>Scope:</b> four named forms only &middot; 20-bit packet &middot; cobweb 1.00</div>
 </td>
-<td colspan="4" valign="top">
-<sub>10 · Bento cell · b-cell b-title cell-4</sub>
-<div><b>06 · MEASUREMENT</b><span>CORPUS PARITY CHECK</span></div>
+</tr>
+<tr>
+<td colspan="12" width="100.0%" valign="top">
+<div><b>06 · MEASUREMENT</b> <span>CORPUS PARITY CHECK</span></div>
       <h2>Each form measured against a known reference, <span>replayed identically every run.</span></h2>
 </td>
 </tr>
 <tr>
-<td colspan="8" valign="top">
-<sub>11 · Bento cell · b-cell b-fig cell-8</sub>
-<div><b>06.1 · COMPARATIVE PERFORMANCE</b><span>FOUR-FORM FORM_EXACT</span></div>
+<td colspan="12" width="100.0%" valign="top">
+<div><b>06.1 · COMPARATIVE PERFORMANCE</b> <span>FOUR-FORM FORM_EXACT</span></div>
       <div>
         <div>
-          <div><span>Tunnel</span><span></span><span>1.00</span></div>
-          <div><span>Spiral</span><span></span><span>1.00</span></div>
-          <div><span>Lattice</span><span></span><span>1.00</span></div>
-          <div><span>Cobweb</span><span></span><span>1.00</span></div>
+          <div><span>Tunnel</span>  <span>1.00</span></div>
+          <div><span>Spiral</span>  <span>1.00</span></div>
+          <div><span>Lattice</span>  <span>1.00</span></div>
+          <div><span>Cobweb</span>  <span>1.00</span></div>
         </div>
       </div>
       <div>FORM_EXACT fidelity &middot; ZPE-Mental 0.1.0 &middot; <strong>validation/corpora/endogenous_forms.json</strong> &middot; Rust &harr; Python byte equality (0-byte delta); four named forms only, no external clinical comparator.</div>
 </td>
 </tr>
 <tr>
-<td colspan="12" valign="top">
-<sub>12 · Bento cell · b-cell b-row-label cell-12</sub>
-<div><b>07 · KEY METRICS</b><span>FOUR-FORM AGGREGATE</span></div>
+<td colspan="12" width="100.0%" valign="top">
+<div><b>07 · KEY METRICS</b> <span>FOUR-FORM AGGREGATE</span></div>
 </td>
 </tr>
 <tr>
-<td colspan="12" valign="top">
-<sub>13 · Bento cell · b-cell b-stat</sub>
+<td width="20%" valign="top">
 <div><b>07.1 · FORM FIDELITY</b></div>
       <div>1.00</div>
       <div>FORM_EXACT · <b>four named forms</b></div>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>14 · Bento cell · b-cell b-stat</sub>
+<td width="20%" valign="top">
 <div><b>07.2 · RUST ↔ PYTHON</b></div>
       <div>0.00<span>B</span></div>
       <div>Byte delta · <b>fast path = reference</b></div>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>15 · Bento cell · b-cell b-stat</sub>
+<td width="20%" valign="top">
 <div><b>07.3 · PYTEST SUITE</b></div>
       <div>3 / 3</div>
       <div>PASS · <b>v0.1.0 commit e3412beb</b></div>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>16 · Bento cell · b-cell b-stat</sub>
+<td width="20%" valign="top">
 <div><b>07.4 · PYPI STATE</b></div>
       <div>0.1.0</div>
       <div>CONNECTED · <b>STALE PENDING 0.1.1</b></div>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>17 · Bento cell · b-cell b-stat</sub>
+<td width="20%" valign="top">
 <div><b>07.5 · WIRE FORMAT</b></div>
       <div>20<span>-bit</span></div>
       <div>Four fixtures · <b>two profiles represented</b></div>
 </td>
 </tr>
 <tr>
-<td colspan="4" valign="top">
-<sub>18 · Bento cell · b-cell b-title is-centered cell-4</sub>
-<div><b>08 · DETERMINISM</b><span>BYTE-EXACT FOUR-FORM REPLAY</span></div>
+<td colspan="4" width="33.33%" valign="top">
+<div><b>08 · DETERMINISM</b> <span>BYTE-EXACT FOUR-FORM REPLAY</span></div>
       <h2>Tunnel, spiral, lattice, cobweb &mdash;<br/><span>byte-exact across Rust and Python.</span></h2>
 </td>
-<td colspan="5" valign="top">
-<sub>19 · Bento cell · b-cell b-prose is-technical cell-5</sub>
-<div><b>08.1 · WHAT DETERMINISTIC MEANS</b><span>FOUR-FORM SURFACE</span></div>
+<td colspan="5" width="41.67%" valign="top">
+<div><b>08.1 · WHAT DETERMINISTIC MEANS</b> <span>FOUR-FORM SURFACE</span></div>
       <p>Each of the four named forms &mdash; tunnel, spiral, lattice, cobweb &mdash; encodes into a <strong>20-bit wire format</strong> and decodes to <em>byte-identical bytes</em> across the Rust-native fast path and the Python reference. <strong>FORM_EXACT = 1.00</strong> is the falsification check. Non-visual prompts do not silently produce a plausible form: they collapse to a documented fallback (NON_VISUAL_SEMANTIC_RETENTION 0.00, NON_VISUAL_ALIAS 1.00) so that any non-visual input is recoverable as such. The COMPASS_8 and D6_12 profiles are represented, not exhaustive.</p>
 </td>
-<td colspan="3" valign="top">
-<sub>20 · Bento cell · b-cell b-blocker cell-3</sub>
+<td colspan="3" width="25.0%" valign="top">
 <div><b>08.2 · THE FIDELITY GAP</b></div>
       <span>Honest Blocker ·</span>
       <p>No cognition decoding, autobiographical recovery, language understanding, theorem proving, legal or moral reasoning, clinical diagnosis, therapy, medical-device, regulatory, mental-health-assessment, or prosthetics use. <strong>The release corpus is exactly four endogenous visual-form examples &mdash; tunnel, spiral, lattice, cobweb.</strong> No all-forms/all-profiles coverage; PyPI remains 0.1.0 stale pending 0.1.1 metadata release.</p>
 </td>
 </tr>
 <tr>
-<td colspan="4" valign="top">
-<sub>21 · Bento cell · b-cell b-title cell-4</sub>
-<div><b>09</b></div>
+<td colspan="6" width="50.0%" valign="top">
+<div><b>09</b> </div>
       <h2>FOUR FORMS, ONE <span>CITABLE SHAPE.</span></h2>
 </td>
-<td colspan="4" valign="top">
-<sub>22 · Bento cell · b-cell b-prose cell-4</sub>
+<td colspan="6" width="50.0%" valign="top">
 <div><b>09.1 · THE AMBITION</b></div>
       <p>ZPE-Mental gives perceptual science its first deterministic packet for the Klüver form constants. Tunnel, spiral, lattice, and cobweb become stable fixtures a psychophysics lab can specify, share, and replay without arguing over rendering or wording &mdash; a small, exact contribution to a question that has resisted exact treatment since <strong>1928</strong>.</p>
 </td>
 </tr>
 <tr>
-<td colspan="12" valign="top">
-<sub>23 · Bento cell · b-cell b-title b-statement-card</sub>
-<div><b>09.2 · WHAT WORKS NOW</b><span>EXTERNAL</span></div>
+<td colspan="6" width="50.0%" valign="top">
+<div><b>09.2 · WHAT WORKS NOW</b> <span>EXTERNAL</span></div>
         <h2>Working today: four named forms at FORM_EXACT 1.00; Rust and Python decode identically; three of three tests pass.</h2>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>24 · Bento cell · b-cell b-title b-statement-card</sub>
-<div><b>09.3 · WHAT'S STILL OPEN</b><span>EXTERNAL</span></div>
+<td colspan="6" width="50.0%" valign="top">
+<div><b>09.3 · WHAT'S STILL OPEN</b> <span>EXTERNAL</span></div>
         <h2>Still open: broader form coverage, full profile range, and the 0.1.1 metadata release that retires the stale PyPI 0.1.0.</h2>
 </td>
 </tr>
 <tr>
-<td colspan="12" valign="top">
-<sub>25 · Bento cell · b-cell b-unlock</sub>
+<td width="20%" valign="top">
 <div><b>09.4</b> &middot; REPLICATION · NEAR-TERM (12–24 MO)</div>
       <div>Perceptual experiments get a shared vocabulary</div><div>A psychophysics group that ran a tunnel-stimulus study in 2024 can hand a 20-bit packet to a 2026 replication team and know both labs are testing the exact same shape &mdash; not a screenshot, not a verbal description.</div>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>26 · Bento cell · b-cell b-unlock</sub>
+<td width="20%" valign="top">
 <div><b>09.5</b> &middot; STIMULUS LIBRARIES · NEAR-TERM (12–24 MO)</div>
       <div>Stimulus libraries get a fidelity floor</div><div>A perception lab maintaining a long-running stimulus library no longer drifts as workstations, GPUs, and rendering toolchains turn over. Tunnel, spiral, lattice, and cobweb resolve to identical bytes across devices and years, so longitudinal studies stop fighting their own equipment.</div>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>27 · Bento cell · b-cell b-unlock</sub>
+<td width="20%" valign="top">
 <div><b>09.6</b> &middot; PSYCHEDELIC RESEARCH · MID-TERM (24–48 MO)</div>
       <div>Clinical trials use a controlled stimulus vocabulary</div><div>Researchers studying psychedelic-induced visual experience cite Klüver form constants constantly but compare them with prose. A four-form packet vocabulary lets multi-site trials, IRB submissions, and published results refer to the same stimulus identity without ambiguity.</div>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>28 · Bento cell · b-cell b-unlock</sub>
+<td width="20%" valign="top">
 <div><b>09.7</b> &middot; BOUNDARY DISCIPLINE · MID-TERM (24–48 MO)</div>
       <div>Replication studies acquire an audit instrument</div><div>Because non-visual prompts collapse to a documented fallback rather than producing a plausible form, a reviewer can probe a published endogenous-visual claim against a bounded reference. Replication science gains a small, exact tool for separating claimed visual content from prompt artefact.</div>
 </td>
-</tr>
-<tr>
-<td colspan="12" valign="top">
-<sub>29 · Bento cell · b-cell b-unlock</sub>
+<td width="20%" valign="top">
 <div><b>09.8</b> &middot; CITABLE FORMS · PARADIGM (48 MO+)</div>
       <div>Perceptual forms become citable objects</div><div>A spiral or lattice referenced in a paper carries an identifier the next reader can retrieve and verify, the way DOIs anchor text. Perceptual research gains the citation infrastructure that text and data already enjoy &mdash; a foundation a century of Klüver scholarship has lacked.</div>
 </td>

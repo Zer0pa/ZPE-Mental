@@ -2,6 +2,32 @@
 
 ## Install / Developer Commands
 
+<!-- INSTALL-DX:START -->
+#### Package Install
+
+Installable package: `python3.11 -m pip install zpe-mental`.
+Current release: `0.1.0` on [PyPI](https://pypi.org/project/zpe-mental/).
+Source: [Zer0pa/ZPE-Mental](https://github.com/Zer0pa/ZPE-Mental/).
+
+```bash
+python3.11 -m pip install zpe-mental
+```
+
+Import smoke:
+
+```bash
+python3.11 - <<'PY'
+import importlib.metadata as md
+import zpe_mental
+
+print("zpe-mental", md.version("zpe-mental"))
+PY
+```
+
+Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
+- Current PyPI surface is Linux cp311 wheel-only with no sdist; use Python 3.11 for smoke checks.
+<!-- INSTALL-DX:END -->
+
 #### Quick Start
 
 ```bash

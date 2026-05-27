@@ -70,7 +70,7 @@ pytest tests -q --junitxml validation/results/pytest.xml
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<div><b>03 · VALUE</b></div>
+<div><b>03 · VALUE OF MARKET</b></div>
       <div><span>$0.75</span> <span>B/yr</span></div>
       <div>NIH BRAIN Initiative annual funding; ZPE-Mental serves perceptual research as a <b>four-form fixture tool</b>.</div>
 </td>

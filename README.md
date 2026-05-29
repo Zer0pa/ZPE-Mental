@@ -1,9 +1,6 @@
 # ZPE-Mental
 
-## Install / Developer Commands
-
-<!-- INSTALL-DX:START -->
-#### Package Install
+## Package Install
 
 PyPI package: `zpe-mental==0.1.0` on [PyPI](https://pypi.org/project/zpe-mental/).
 Current published artifacts are Python 3.11 Linux x86_64 manylinux wheels only; macOS/Windows installs and source-build installs require future sdists or additional platform wheels. Package availability does not imply product or clinical readiness.
@@ -15,36 +12,9 @@ Supported PyPI artifact install, on Python 3.11 Linux x86_64:
 python3.11 -m pip install zpe-mental
 ```
 
-Import smoke after a supported-platform install:
+For full install, smoke, source, and developer commands, [click here](#install-developer-commands-detailed).
 
-```bash
-python3.11 - <<'PY'
-import importlib.metadata as md
-import zpe_mental
-
-print("zpe-mental", md.version("zpe-mental"))
-PY
-```
-
-Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
-- Current PyPI surface is Linux x86_64 Python 3.11 wheel-only with no sdist; use Python 3.11 Linux x86_64 for PyPI smoke checks.
-<!-- INSTALL-DX:END -->
-
-#### Quick Start
-
-```bash
-python3 - <<'PY'
-import sys
-raise SystemExit(0 if sys.version_info >= (3, 11) else "Python 3.11+ is required")
-PY
-cargo --version
-python3 -m venv .venv
-. .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install ".[test]"
-python scripts/validate_release.py --output proofs/artifacts/mental_release_matrix.json
-pytest tests -q --junitxml validation/results/pytest.xml
-```
+---
 
 <table width="100%">
 <tr>
@@ -316,3 +286,53 @@ pytest tests -q --junitxml validation/results/pytest.xml
 </td>
 </tr>
 </table>
+
+---
+
+<a id="install-developer-commands-detailed"></a>
+
+## Install / Developer Commands Detailed
+
+<!-- INSTALL-DX:START -->
+#### Package Install
+
+PyPI package: `zpe-mental==0.1.0` on [PyPI](https://pypi.org/project/zpe-mental/).
+Current published artifacts are Python 3.11 Linux x86_64 manylinux wheels only; macOS/Windows installs and source-build installs require future sdists or additional platform wheels. Package availability does not imply product or clinical readiness.
+Source: [Zer0pa/ZPE-Mental](https://github.com/Zer0pa/ZPE-Mental/).
+
+Supported PyPI artifact install, on Python 3.11 Linux x86_64:
+
+```bash
+python3.11 -m pip install zpe-mental
+```
+
+Import smoke after a supported-platform install:
+
+```bash
+python3.11 - <<'PY'
+import importlib.metadata as md
+import zpe_mental
+
+print("zpe-mental", md.version("zpe-mental"))
+PY
+```
+
+Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
+- Current PyPI surface is Linux x86_64 Python 3.11 wheel-only with no sdist; use Python 3.11 Linux x86_64 for PyPI smoke checks.
+<!-- INSTALL-DX:END -->
+
+#### Quick Start
+
+```bash
+python3 - <<'PY'
+import sys
+raise SystemExit(0 if sys.version_info >= (3, 11) else "Python 3.11+ is required")
+PY
+cargo --version
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install ".[test]"
+python scripts/validate_release.py --output proofs/artifacts/mental_release_matrix.json
+pytest tests -q --junitxml validation/results/pytest.xml
+```

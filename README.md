@@ -21,6 +21,7 @@ For full install, smoke, source, and developer commands, [click here](#install-d
 <td width="100%" valign="top">
 <div><span><b>00 · ZPE-MENTAL</b> · VISUAL FORM CODEC</span> <span>RESEARCH-READY · LINUX WHEEL ONLY</span></div>
       <h1>Exploring A Codec For <span>Mental Forms</span></h1>
+      <p><strong>Live experiment. Not a release. Ambition headlined. Claims bounded.</strong></p>
       <p>Four-form endogenous-visual codec &middot; ZPE-Mental &middot; PyPI <em>zpe-mental</em> v0.1.0, Linux x86_64 wheel only &middot; github.com/Zer0pa/ZPE-Mental</p>
       <p>Perceptual science has described tunnel, spiral, lattice, and cobweb for nearly a century &mdash; the four Klüver form constants people see in the mind's eye &mdash; but no one had ever pinned them to an exact, replayable shape. ZPE-Mental writes each form into a <strong>20-bit packet</strong> and brings it back byte-identical across a Rust-native fast path and a Python reference. Non-visual prompts collapse to a bounded fallback. <em>No cognition, clinical, diagnostic, or autobiographical claim is made</em> &mdash; just the four forms, replayed exactly.</p>
 </td>
